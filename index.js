@@ -11,4 +11,9 @@ app.get("/myget", (req, res) => {
   res.send(req.body);
 });
 
+app.get("/", (req, res) => {
+  console.log("Hello From Homepage")
+  res.send(req.body);
+})
+
 app.listen(4001, () => console.log(`Server is running at port 4001...`));
